@@ -1,14 +1,14 @@
-let a = 10;
-let b = 5;
+function sumar(a, b) {
+  return a + b;
+}
 
-// Suma
-let suma = a + b;
-console.log("Suma:", suma); // 15
+function restar(a, b) {
+  return a - b;
+}
 
-// Resta
-let resta = a - b;
-console.log("Resta:", resta); // 5
+function multiplicar(a, b) {
+  return a * b;
+}
 
-// Multiplicación
-let multiplicacion = a * b;
-console.log("Multiplicación:", multiplicacion); // 50
+// Exportamos para poder usarlos en otros archivos si hace falta
+module.exports = { sumar, restar, multiplicar };
